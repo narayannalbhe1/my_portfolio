@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Global/Routes/routes.dart';
 import 'package:my_portfolio/Views/Home/Component/AppBar/app_bar.dart';
+import 'package:my_portfolio/Views/Home/Component/home/home_component.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.blueGrey,
         automaticallyImplyLeading: false,
-        title:  Row(
+        title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
@@ -43,7 +44,19 @@ class _HomePageState extends State<HomePage> {
         ),
 
       ),
-      body: Text('Home Page'),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          HomeComponent(),
+          // AboutComponent(),
+          // SkillComponent(),
+          // EducationComponent(),
+          // WorkComponent(),
+          // ExperienceComponent(),
+          // ContactComponent(),
+        ],
+      ),
     );
   }
 }

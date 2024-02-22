@@ -16,6 +16,17 @@ class HomeComponent extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+            Container(
+              width: 200,
+              height: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(100),
+                image: DecorationImage(
+                  image: AssetImage('assets/images/img.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
             Text(
               'Welcome to My Portfolio!',
               style: TextStyle(
@@ -25,7 +36,7 @@ class HomeComponent extends StatelessWidget {
             ),
             SizedBox(height: 20.0),
             Text(
-              'I am a passionate developer.',
+              'I am a Flutter app developer.',
               style: TextStyle(
                 fontSize: 18.0,
               ),

@@ -32,7 +32,17 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       body: Text('splash screen'),
+      backgroundColor: Colors.black,
+       body: Center(
+         child: CircleAvatar(
+           radius: 100,
+             child: Column(
+               children: [
+                 Text('Flutive Tech'),
+                 Text('Innovate, Create, Flutive'),
+               ],
+             )),
+       ),
     );
   }
 }
